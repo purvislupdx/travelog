@@ -1,0 +1,71 @@
+/* Lucy Purvis  */
+/* Assignment 4 using flexbox technique*/
+@font-face {
+  font-family: NewYorkerFont; /* Custon font declaration */
+  src: url("../fonts/ny-irvin.ttf");
+}
+.container {
+  width: 75%;
+  margin: auto;
+  border: #1A1919 thin solid;
+}
+.menu-container {
+  display: flex;
+  background-color: black;
+  justify-content: space-around;
+}
+.menu-item {
+  background-color: black;
+  color: antiquewhite;
+  font-family: NewYorkerFont;
+  text-align: center;
+  padding: 10px;
+}
+.menu-item:hover {      /* Change the link color to gray on hover */
+  background-color: gray;
+}
+.active {     /* Active current page marker */
+  background-color: lightslategray;
+}
+.title {
+  text-align: center;
+}
+.caption {
+  text-align: center;
+  font-size: 14px;
+}
+.img-container {
+  display: flex;
+  justify-content: space-around;
+}
+.img-item {
+  max-height: 100%;
+  max-width: 100%;
+  margin:auto;
+}
+.img-item:first-child > span { margin-right: auto; }
+
+.img-item:last-child  > span { margin-left: auto;  }
+
+h1 {
+  font-family: NewYorkerFont;
+}
+p {
+  padding: 0px 25px;
+  font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", "Verdana", "sans-serif"
+}
+a {
+  font-family: NewYorkerFont;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+footer {
+  position: relative;
+  width: 100%;
+}
+p.copyright {
+  color: black;
+  font-size: .75em;
+  text-align: center;
+}
